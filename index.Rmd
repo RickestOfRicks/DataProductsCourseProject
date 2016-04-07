@@ -1,18 +1,14 @@
 ---
 title       : Data Products
 subtitle    : Course Project
-author      : 
-job         : 
+author      : Richard Berry
+job         : Coursera Data Project
 framework   : io2012   # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : mathjax           # {mathjax, quiz, bootstrap}
+widgets     : [mathjax]           # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
 ---
-```{r,echo = FALSE}
-library(slidify)
-```
 # Data Products Course Project
 
 ## Calculating the roots of a quadratic equation
@@ -36,6 +32,7 @@ $$1st  Root = \frac{-b + \sqrt{b^2 - 4 a c}}{2a}$$
 $$2nd  Root = \frac{-b - \sqrt{b^2 - 4 a c}}{2a}$$
 
 For this to be done the code is as follows.
+
 ```{r,eval = FALSE}
 roots <- function(a,b,c)
 {
@@ -51,8 +48,8 @@ roots <- function(a,b,c)
 }
 ```
 
-
 ---
+
 Given the following formula, we can input the coefficients for the x variables and the constant term into the program and use it to determine the roots.
 
 $$f(x) = x^2 - 6x + 9$$

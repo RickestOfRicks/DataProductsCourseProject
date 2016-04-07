@@ -23,8 +23,7 @@ $$2nd  Root = \frac{-b - \sqrt{b^2 - 4 a c}}{2a}$$
 
 For this to be done the code is as follows.
 
-
-```r
+```{r,eval = FALSE}
 roots <- function(a,b,c)
 {
   r1 = (-b + sqrt(b*b-4*a*c))/(2*a)
