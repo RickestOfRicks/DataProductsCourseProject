@@ -61,6 +61,8 @@
 <p>A generic method for doing this is to use the Quadratic Formula:
 \[\frac{-b \pm \sqrt{b^2 - 4 a c}}{2a}\]</p>
 
+<p>a represents the coefficient of the x^2 term, b is the coefficient for the x term and c is the constant term.</p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -71,6 +73,22 @@
 
 <p>\[1st  Root = \frac{-b + \sqrt{b^2 - 4 a c}}{2a}\]
 \[2nd  Root = \frac{-b - \sqrt{b^2 - 4 a c}}{2a}\]</p>
+
+<p>For this to be done the code is as follows.</p>
+
+<pre><code class="r">roots &lt;- function(a,b,c)
+{
+  r1 = (-b + sqrt(b*b-4*a*c))/(2*a)
+  r2 = (-b - sqrt(b*b-4*a*c))/(2*a)
+  ans = c(r1,r2)
+
+  if((b*b-4*a*c)&lt;0)
+  {
+    ans = &quot;No Real Roots&quot;
+  }
+  print(ans)
+}
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
